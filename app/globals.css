@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-radial-1 {
+  background: radial-gradient(
+    #99ede5 0%,
+    #b2f1eb80 26%,
+    #d7f6f349 43%,
+    #eaf9f734 82%,
+    #fbfbfb20 100%
+  );
+  opacity: 0.2;
+  filter: blur(120px);
+}

@@ -7,7 +7,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'light-green': '#64CCC5',
+      },
+      fontFamily: {
+        'roboto-serif': ['var(--font-roboto-serif)'],
+      },
+    },
   },
   plugins: [],
 };
