@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans, Roboto_Serif } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
 const robotoSerif = Roboto_Serif({
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${dmSans.className} ${robotoSerif.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

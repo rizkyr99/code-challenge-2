@@ -70,13 +70,9 @@ const Hero = () => {
           <div className='absolute inset-0 h-[640px] w-[640px] bg-radial-1 m-auto rounded-full shadow-[0_0_20px_2px_#64CCC5]'></div>
           <div className='absolute inset-0 h-[590px] w-[590px] rounded-full m-auto border-2 border-light-green/75 group-hover:scale-125 group-hover:blur-sm transition duration-300'></div>
           <div className='absolute inset-0 h-[510px] w-[510px] border rounded-full border-white/25 m-auto group-hover:scale-110 group-hover:blur-lg transition'></div>
-          <Image
-            src={heroImg}
-            width={430}
-            height={430}
-            alt='hero'
-            className='absolute inset-0 m-auto group-hover:scale-105 transition'
-          />
+          <div className='absolute inset-0 h-[430px] w-[430px] m-auto rounded-full group-hover:scale-105 group-hover:shadow-[0_0_80px_20px_#64CCC525] transition'>
+            <Image src={heroImg} width={430} height={430} alt='hero' />
+          </div>
         </div>
       </div>
     </section>
