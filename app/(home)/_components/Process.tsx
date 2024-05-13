@@ -4,7 +4,7 @@ import lightbulb from '@/assets/lightbulb.svg';
 const Process = () => {
   return (
     <section className='py-24'>
-      <h2 className='text-2xl text-light-green font-roboto-serif font-medium text-center'>
+      <h2 className='text-2xl text-light-green font-roboto-serif font-medium text-center mb-4'>
         Process
       </h2>
       <h3 className='text-5xl font-roboto-serif font-semibold text-center leading-tight mb-24'>
