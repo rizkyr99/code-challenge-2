@@ -12,8 +12,8 @@ export default function Home() {
       <Services />
       <AboutUs />
       <Process />
-      <Testimonials />
       <Showcase />
+      <Testimonials />
     </main>
   );
 }
