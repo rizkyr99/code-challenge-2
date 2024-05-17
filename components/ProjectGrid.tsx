@@ -3,8 +3,8 @@ import Image from 'next/image';
 const ProjectGrid = () => {
   return (
     <div className='max-w-7xl mx-auto grid grid-cols-2 gap-16'>
-      {[1, 2, 3, 4].map(() => (
-        <div className=''>
+      {[1, 2, 3, 4].map((project, index) => (
+        <div key={index} className=''>
           <Image
             src='/images/project1.jpg'
             width={640}

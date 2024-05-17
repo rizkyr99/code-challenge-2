@@ -20,6 +20,9 @@ const Navbar = () => {
           <Link href='/about' className='text-white text-xl'>
             About
           </Link>
+          <Link href='/services' className='text-white text-xl'>
+            Services
+          </Link>
           <Link href='/contact' className='text-white text-xl'>
             Contact Us
           </Link>

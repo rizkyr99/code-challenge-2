@@ -22,7 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${dmSans.className} ${robotoSerif.variable}`}>
+      <body
+        className={`${dmSans.className} ${robotoSerif.variable} w-screen overflow-x-hidden`}>
         <Navbar />
         {children}
         <Footer />
