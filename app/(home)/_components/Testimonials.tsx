@@ -29,16 +29,16 @@ const Testimonials = () => {
   }, [activeIndex]);
 
   return (
-    <section className='mb-24'>
-      <div className='max-w-7xl mx-auto bg-[#F4F4F4] p-12 rounded-2xl flex flex-col items-center'>
+    <section className='mb-24 px-4'>
+      <div className='max-w-7xl mx-auto bg-[#F4F4F4] p-4 sm:p-8 md:p-12 rounded-2xl flex flex-col items-center'>
         <Image
           src={testimonials[activeIndex].image}
           width={144}
           height={144}
           alt='testimonials image'
-          className='size-36 object-cover rounded-full object-center'
+          className='size-24 md:size-36 object-cover rounded-full object-center'
         />
-        <p className='font-roboto-serif text-2xl font-bold text-center my-8'>
+        <p className='font-roboto-serif text-sm md:text-lg lg:text-2xl font-bold text-center my-8'>
           “{testimonials[activeIndex].content}”
         </p>
         <p className='font-roboto-serif font-bold text-xl mb-1.5'>

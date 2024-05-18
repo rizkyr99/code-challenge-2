@@ -2,10 +2,8 @@ import ProjectGrid from '@/components/ProjectGrid';
 
 const Showcase = () => {
   return (
-    <section className='mb-24'>
-      <h2 className='text-5xl font-roboto-serif font-semibold text-center leading-tight mb-16'>
-        Recent Showcase
-      </h2>
+    <section className='mb-24 px-4 md:px-8'>
+      <h2 className='heading-3'>Recent Showcase</h2>
       <ProjectGrid />
     </section>
   );

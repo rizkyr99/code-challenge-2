@@ -7,31 +7,21 @@ import instagram from '@/assets/instagram.svg';
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-white'>
+    <footer className='bg-black text-white px-4 md:px-8'>
       <div className='max-w-7xl mx-auto'>
-        <div className='grid grid-cols-3 gap-20 py-20'>
-          <div>
-            <div className='flex items-center gap-3 mb-6'>
-              <Image src={logo} width={52} height={52} alt='canvix logo' />
-              <span className='text-3xl font-roboto-serif font-semibold'>
-                Canvix
-              </span>
-            </div>
-            <p className='text-lg'>
-              We’re a team of strategic creator and digital innovator, united
-              focus in our pursuit of mastery and joyful.
-            </p>
-          </div>
-          <div className='grid grid-cols-2'>
-            <div>
-              <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
-                Pages
-              </h5>
-              <div className='flex flex-col gap-2'>
-                <Link href=''>Home</Link>
-                <Link href=''>Home</Link>
-                <Link href=''>Home</Link>
+        <div className='flex flex-col lg:flex-row justify-between gap-x-16 gap-y-8 py-12 lg:py-20'>
+          <div className='flex gap-12'>
+            <div className='basis-1/2'>
+              <div className='flex items-center gap-3 mb-6'>
+                <Image src={logo} width={52} height={52} alt='canvix logo' />
+                <span className='text-3xl font-roboto-serif font-semibold'>
+                  Canvix
+                </span>
               </div>
+              <p className='text-lg'>
+                We&apos;re a team of strategic creator and digital innovator,
+                united focus in our pursuit of mastery and joyful.
+              </p>
             </div>
             <div>
               <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
@@ -45,21 +35,21 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
+            <h5 className='font-roboto-serif font-semibold text-xl mb-5 text-center md:text-left'>
               Subscribe
             </h5>
-            <div className='bg-white p-3 rounded-full flex items-center'>
+            <div className='md:bg-white p-3 rounded-full flex flex-col md:flex-row items-center'>
               <input
                 type='text'
                 placeholder='Enter your email here'
-                className='flex-1 px-3 text-black text-lg outline-none'
+                className='flex-1 max-md:py-4 px-6 md:px-3 text-black text-lg outline-none rounded-full'
               />
               <Button variant='black'>Subscribe</Button>
             </div>
           </div>
         </div>
         <hr className='border-none h-px bg-neutral-500' />
-        <div className='flex justify-between pt-7 pb-14'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-8 text-center lg:text-left pt-7 pb-14'>
           <div>
             <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
               Copyright by

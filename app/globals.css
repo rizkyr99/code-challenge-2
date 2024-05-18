@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-radial-1 {
-  background: radial-gradient(
-    #99ede5 0%,
-    #b2f1eb80 26%,
-    #d7f6f349 43%,
-    #eaf9f734 82%,
-    #fbfbfb20 100%
-  );
-  opacity: 0.2;
-  filter: blur(120px);
+@layer components {
+  .heading-2 {
+    @apply text-xl md:text-2xl text-light-green font-semibold font-roboto-serif text-center mb-4;
+  }
+
+  .heading-3 {
+    @apply text-3xl md:text-5xl font-semibold font-roboto-serif text-center leading-tight mb-16;
+  }
+}
+
+@layer utilities {
+  .bg-radial-1 {
+    background: radial-gradient(
+      #99ede5 0%,
+      #b2f1eb80 26%,
+      #d7f6f349 43%,
+      #eaf9f734 82%,
+      #fbfbfb20 100%
+    );
+    opacity: 0.2;
+    filter: blur(120px);
+  }
 }
