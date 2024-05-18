@@ -1,6 +1,6 @@
 import AboutUs from './_components/AboutUs';
 import Hero from './_components/Hero';
-import Process from './_components/Process';
+import Cultures from '@/components/Cultures';
 import Services from './_components/Services';
 import Showcase from './_components/Showcase';
 import Testimonials from './_components/Testimonials';
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <AboutUs />
-      <Process />
+      <Cultures />
       <Showcase />
       <Testimonials />
     </main>

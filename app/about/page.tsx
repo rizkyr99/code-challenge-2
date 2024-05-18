@@ -6,6 +6,7 @@ import about1 from '@/assets/about1.png';
 import Link from 'next/link';
 import Button from '@/components/Button';
 import CTA from '@/components/CTA';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const AboutPage = () => {
   return (
@@ -13,9 +14,6 @@ const AboutPage = () => {
       <section className='mb-24'>
         <div className='relative max-w-7xl mx-auto bg-black px-16 py-20 rounded-[20px] grid grid-cols-2 gap-12'>
           <div>
-            <p className='text-white text-lg mb-2'>
-              Pleasure and so read the was hope.
-            </p>
             <h1 className='font-roboto-serif text-white text-6xl font-semibold leading-tight mb-8'>
               Ready to take
               <br />
@@ -24,9 +22,10 @@ const AboutPage = () => {
               to the next level?
             </h1>
             <p className='text-white mb-10'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut
-              massa libero egestas malesuada viverra gravida libero cursus nulla
-              leo pulvinar.
+              We're more than just a digital agency, we're a team of passionate
+              innovators dedicated to transforming your digital presence. Learn
+              about our journey, meet the experts driving our success, and
+              explore the values that make us unique.
             </p>
             <div className='flex gap-3 items-center'>
               <Image src={heroTestimonial} width={70} height={70} alt='image' />
@@ -67,34 +66,25 @@ const AboutPage = () => {
       </section>
       <section className='max-w-7xl mx-auto grid grid-cols-3 gap-16 my-24'>
         <div className='flex flex-col gap-4 text-center'>
-          <p className='text-5xl font-roboto-serif font-semibold'>200+</p>
+          <p className='text-5xl font-roboto-serif font-semibold'>8+</p>
           <p className='font-medium text-2xl font-roboto-serif'>
-            We're a family
+            Years in Business
           </p>
-          <p>
-            Speedily say has suitable disposal add boy. On fourth doubt miles of
-            child. Exercise joy man children rejoiced.
+          <p>Providing top-tier digital solutions since 2016.</p>
+        </div>
+        <div className='flex flex-col gap-4 text-center'>
+          <p className='text-5xl font-roboto-serif font-semibold'>90%</p>
+          <p className='font-medium text-2xl font-roboto-serif'>
+            Satisfaction Rate
           </p>
+          <p>Ensuring ongoing satisfaction and long-term partnerships.</p>
         </div>
         <div className='flex flex-col gap-4 text-center'>
           <p className='text-5xl font-roboto-serif font-semibold'>200+</p>
           <p className='font-medium text-2xl font-roboto-serif'>
-            We're a family
+            Projects Completed
           </p>
-          <p>
-            Speedily say has suitable disposal add boy. On fourth doubt miles of
-            child. Exercise joy man children rejoiced.
-          </p>
-        </div>
-        <div className='flex flex-col gap-4 text-center'>
-          <p className='text-5xl font-roboto-serif font-semibold'>200+</p>
-          <p className='font-medium text-2xl font-roboto-serif'>
-            We're a family
-          </p>
-          <p>
-            Speedily say has suitable disposal add boy. On fourth doubt miles of
-            child. Exercise joy man children rejoiced.
-          </p>
+          <p>Successfully delivering a wide range of digital projects.</p>
         </div>
       </section>
       <section className='bg-black mb-24'>
@@ -111,8 +101,8 @@ const AboutPage = () => {
       </section>
       <section className='mb-24'>
         <div className='max-w-7xl mx-auto grid grid-cols-3 gap-16'>
-          {[1, 2, 3].map(() => (
-            <div className=''>
+          {[1, 2, 3].map((_, index) => (
+            <div key={index} className=''>
               <div className='relative'>
                 <Image
                   src='/images/team1.png'
@@ -123,14 +113,20 @@ const AboutPage = () => {
                 />
                 <div className='absolute top-4 right-4 flex gap-5'>
                   <Link
-                    href=''
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'></Link>
+                    href='https://facebook.com'
+                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
+                    <Linkedin className='size-4' />
+                  </Link>
                   <Link
-                    href=''
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'></Link>
+                    href='https://facebook.com'
+                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
+                    <Instagram className='size-4' />
+                  </Link>
                   <Link
-                    href=''
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'></Link>
+                    href='https://facebook.com'
+                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
+                    <Facebook className='size-4' />
+                  </Link>
                 </div>
               </div>
               <p className='font-roboto-serif font-semibold text-2xl mt-4 mb-2'>

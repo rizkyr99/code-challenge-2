@@ -11,16 +11,15 @@ const Hero = () => {
         <div className='flex flex-col justify-between'>
           <div>
             <h1 className='text-white font-roboto-serif text-6xl font-semibold leading-tight mb-6'>
-              Ready to take your
+              Empowering Your
               <br />
-              <span className='text-light-green'>Business Growth</span>
-              <br />
-              to the next level?
+              <span className='text-light-green'>Digital Future</span>
             </h1>
-            <p className='text-white text-lg mb-8'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut
-              massa libero egestas malesuada viverra gravida libero cursus nulla
-              leo pulvinar.
+            <p className='text-white mb-8'>
+              From cutting-edge web development to powerful digital marketing
+              strategies, our team of experts is here to elevate your brand and
+              help you achieve your goals. Join us on a journey of creativity,
+              technology, and excellence.
             </p>
             <Button variant='white' isLarge>
               <div className='rounded-full bg-black'>

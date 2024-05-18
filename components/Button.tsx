@@ -5,7 +5,7 @@ interface ButtonProps {
 }
 
 const buttonVariants = {
-  white: 'bg-white',
+  white: 'bg-white text-black',
   black: 'bg-black text-white',
   green: 'bg-light-green',
 };

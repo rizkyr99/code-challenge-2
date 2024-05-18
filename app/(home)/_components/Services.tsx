@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import pencilIcon from '@/assets/pencil-line.svg';
+import { services } from '@/data';
 
 const Services = () => {
   return (
@@ -13,20 +14,20 @@ const Services = () => {
         for your business
       </h3>
       <div className='grid grid-cols-3 gap-14'>
-        {[1, 2, 3, 4, 5, 6].map((service) => (
-          <div key={service} className='bg-neutral-100 p-10 rounded-2xl'>
-            <div className='h-16 w-16 bg-black rounded-full flex items-center justify-center mb-14'>
-              <Image src={pencilIcon} width={30} height={30} alt='pencil' />
+        {services.map((service) => {
+          const Icon = service.icon;
+          return (
+            <div key={service.name} className='bg-neutral-100 p-10 rounded-2xl'>
+              <div className='h-16 w-16 bg-black rounded-full flex items-center justify-center mb-14'>
+                <Icon className='size-6 text-white' />
+              </div>
+              <p className='text-xl font-medium font-roboto-serif mb-4'>
+                {service.name}
+              </p>
+              <p className=''>{service.description}</p>
             </div>
-            <p className='text-xl font-medium font-roboto-serif mb-4'>
-              Content Marketing
-            </p>
-            <p className=''>
-              Our team creates engaging and shareable content that resonates
-              with your audience, drives organic traffic
-            </p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
