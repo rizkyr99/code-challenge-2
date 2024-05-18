@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import pencilIcon from '@/assets/pencil-line.svg';
 import { services } from '@/data';
+import Button from '@/components/Button';
 
 const Services = () => {
   return (
@@ -24,7 +25,8 @@ const Services = () => {
               <p className='text-xl font-medium font-roboto-serif mb-4'>
                 {service.name}
               </p>
-              <p className=''>{service.description}</p>
+              <p className='mb-6'>{service.description}</p>
+              <Button variant='black'>Learn more</Button>
             </div>
           );
         })}

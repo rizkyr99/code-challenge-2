@@ -62,7 +62,7 @@ export const milestones: Milestone[] = [
     title: 'First Major Project',
     description:
       'Completed our first major project for a renowned local business, establishing our reputation for delivering high-quality digital solutions.',
-    image: '/images/headquarter.jpg',
+    image: '/images/project2.jpg',
   },
   {
     year: '2014',
@@ -73,10 +73,10 @@ export const milestones: Milestone[] = [
   },
   {
     year: '2016',
-    title: 'The Beginning',
+    title: 'Industry Recognition',
     description:
       'Received our first industry award for excellence in web design, marking a significant achievement and recognition within the digital industry.',
-    image: '/images/headquarter.jpg',
+    image: '/images/the-beginning.jpg',
   },
   {
     year: '2020',
@@ -91,5 +91,59 @@ export const milestones: Milestone[] = [
     description:
       'Launched several innovative projects incorporating cutting-edge technologies like AI and VR, showcasing our dedication to staying ahead in the digital landscape.',
     image: '/images/innovative.jpg',
+  },
+];
+
+export const recentProjects = [
+  {
+    title: 'E-commerce Website Redesign',
+    service: 'Web Development',
+    customer: 'ABC Retail Inc.',
+    image: '/images/project1.jpg',
+  },
+  {
+    title: 'Brand Identity Refresh',
+    service: 'Branding',
+    customer: 'XYZ Corp.',
+    image: '/images/project2.jpg',
+  },
+  {
+    title: 'Mobile App Development',
+    service: 'App Development',
+    customer: 'Mobile Solutions Ltd.',
+    image: '/images/project3.jpg',
+  },
+  {
+    title: 'Digital Marketing Campaign',
+    service: 'Digital Marketing',
+    customer: 'Marketing Innovations LLC',
+    image: '/images/project4.jpg',
+  },
+];
+
+export const testimonials = [
+  {
+    name: 'Emily Johnson',
+    position: 'Marketing Director',
+    company: 'PixelWave Digital Agency',
+    image: '/images/testimonial1.jpg',
+    content:
+      'Working with the team at PixelWave has been an absolute pleasure. Their innovative approach to digital marketing has significantly boosted our online presence and helped us reach new heights.',
+  },
+  {
+    name: 'Michael Lee',
+    position: 'CEO',
+    company: 'Tech Solutions Ltd.',
+    image: '/images/testimonial2.jpg',
+    content:
+      'I highly recommend Tech Solutions Ltd. for their exceptional service and expertise in web development. Their attention to detail and dedication to client satisfaction are truly commendable.',
+  },
+  {
+    name: 'Sarah Patel',
+    position: 'Founder & CEO',
+    company: 'Startup Innovations Inc.',
+    image: '/images/testimonial3.jpg',
+    content:
+      'Startup Innovations Inc. owes much of its success to the talented team at Tech Innovations Inc. Their app development services have been instrumental in bringing our vision to life.',
   },
 ];
