@@ -9,7 +9,7 @@ const ContactPage = () => {
       <section className='flex gap-16'>
         <div className=''>
           <h1 className='font-roboto-serif font-semibold text-6xl mb-9'>
-            Let's talk
+            Let&apos;s talk
           </h1>
           <p className='mb-8'>
             We collaborate with thousands of creators, entrepreneurs and

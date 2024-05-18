@@ -22,10 +22,10 @@ const AboutPage = () => {
               to the next level?
             </h1>
             <p className='text-white mb-10'>
-              We're more than just a digital agency, we're a team of passionate
-              innovators dedicated to transforming your digital presence. Learn
-              about our journey, meet the experts driving our success, and
-              explore the values that make us unique.
+              We&apos;re more than just a digital agency, we&apos;re a team of
+              passionate innovators dedicated to transforming your digital
+              presence. Learn about our journey, meet the experts driving our
+              success, and explore the values that make us unique.
             </p>
             <div className='flex gap-3 items-center'>
               <Image src={heroTestimonial} width={70} height={70} alt='image' />
