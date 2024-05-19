@@ -5,7 +5,7 @@ import { cultures } from '@/data';
 const Cultures = () => {
   return (
     <section className='my-24 px-4 lg:px-12 w-full overflow-x-hidden'>
-      <h2 className='heading-2 brightness-75'>Our Culture</h2>
+      <h2 className='heading-2 text-dark-green'>Our Culture</h2>
       <h3 className='heading-3'>
         The core values
         <br />

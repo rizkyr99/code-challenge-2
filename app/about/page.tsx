@@ -9,6 +9,7 @@ import CTA from '@/components/CTA';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import AboutUs from '@/components/AboutUs';
 import Cultures from '@/components/Cultures';
+import Teams from './_components/Teams';
 
 const AboutPage = () => {
   return (
@@ -95,44 +96,7 @@ const AboutPage = () => {
         </div>
       </section>
       <AboutUs />
-      <section className='my-24 px-4 md:px-8'>
-        <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16'>
-          {[1, 2, 3].map((_, index) => (
-            <div key={index} className='max-lg:max-w-sm w-full mx-auto'>
-              <div className='relative'>
-                <Image
-                  src='/images/team1.png'
-                  width={420}
-                  height={500}
-                  alt='team image'
-                  className='rounded-2xl w-full object-cover'
-                />
-                <div className='absolute top-4 right-4 flex gap-5'>
-                  <Link
-                    href='https://facebook.com'
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
-                    <Linkedin className='size-4' />
-                  </Link>
-                  <Link
-                    href='https://facebook.com'
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
-                    <Instagram className='size-4' />
-                  </Link>
-                  <Link
-                    href='https://facebook.com'
-                    className='h-9 w-9 flex items-center justify-center bg-white rounded-full'>
-                    <Facebook className='size-4' />
-                  </Link>
-                </div>
-              </div>
-              <p className='font-roboto-serif font-semibold text-2xl mt-4 mb-2'>
-                Esther Howards
-              </p>
-              <p>Founded & CEO</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Teams />
       <Cultures />
       <CTA />
     </main>

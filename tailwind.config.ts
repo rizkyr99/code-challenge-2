@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'light-green': '#64CCC5',
+        'dark-green': '#246158',
       },
       fontFamily: {
         'roboto-serif': ['var(--font-roboto-serif)'],

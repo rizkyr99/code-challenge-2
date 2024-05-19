@@ -1,12 +1,10 @@
-import Image from 'next/image';
-import pencilIcon from '@/assets/pencil-line.svg';
 import { services } from '@/data';
 import Button from '@/components/Button';
 
 const Services = () => {
   return (
     <section className='max-w-7xl mx-auto py-24 px-4'>
-      <h2 className='heading-2 brightness-75'>Our Services</h2>
+      <h2 className='heading-2 text-dark-green'>Our Services</h2>
       <h3 className='heading-3'>
         High-impact services
         <br />
