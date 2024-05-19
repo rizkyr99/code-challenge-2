@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`${
         isLarge ? 'pr-5 pl-3' : 'px-4'
-      } py-2.5 flex items-center gap-3 text-lg rounded-full ${
+      } py-2.5 flex items-center gap-3 text-lg rounded-full hover:opacity-75 transition ${
         buttonVariants[variant]
       } ${className}`}>
       {children}

@@ -4,7 +4,7 @@ import { cultures } from '@/data';
 
 const Cultures = () => {
   return (
-    <section className='py-24 px-4 lg:px-12 w-full overflow-x-hidden'>
+    <section className='my-24 px-4 lg:px-12 w-full overflow-x-hidden'>
       <h2 className='heading-2'>Our Culture</h2>
       <h3 className='heading-3'>
         The core values

@@ -6,6 +6,13 @@ import Button from './Button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+const items = [
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
+  { label: 'Services', path: '/services' },
+  { label: 'Contact', path: '/contact' },
+];
+
 const Navbar = () => {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
@@ -31,19 +38,18 @@ const Navbar = () => {
             Canvix
           </span>
         </Link>
-        <div className='hidden md:flex items-center gap-9'>
-          <Link href='/' className='text-xl'>
-            Home
-          </Link>
-          <Link href='/about' className='text-xl'>
-            About
-          </Link>
-          <Link href='/services' className='text-xl'>
-            Services
-          </Link>
-          <Link href='/contact' className='text-xl'>
-            Contact Us
-          </Link>
+        <div className='hidden lg:flex items-center gap-9'>
+          {items.map((item) => (
+            <Link
+              href={item.path}
+              className={`text-xl ${
+                pathname === item.path
+                  ? 'opacity-100 font-semibold'
+                  : 'opacity-75 font-normal'
+              }`}>
+              {item.label}
+            </Link>
+          ))}
         </div>
         <Button
           variant={isHomePage ? 'white' : 'black'}
