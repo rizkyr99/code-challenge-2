@@ -24,20 +24,21 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
+              <div className='font-roboto-serif font-semibold text-xl mb-5'>
                 Pages
-              </h5>
+              </div>
               <div className='flex flex-col gap-2'>
-                <Link href=''>Home</Link>
-                <Link href=''>Home</Link>
-                <Link href=''>Home</Link>
+                <Link href='/'>Home</Link>
+                <Link href='/about'>About</Link>
+                <Link href='/services'>Services</Link>
+                <Link href='/contact'>Contact Us</Link>
               </div>
             </div>
           </div>
           <div>
-            <h5 className='font-roboto-serif font-semibold text-xl mb-5 text-center md:text-left'>
+            <div className='font-roboto-serif font-semibold text-xl mb-5 text-center md:text-left'>
               Subscribe
-            </h5>
+            </div>
             <div className='md:bg-white p-3 rounded-full flex flex-col md:flex-row items-center'>
               <input
                 type='text'
@@ -51,26 +52,26 @@ const Footer = () => {
         <hr className='border-none h-px bg-neutral-500' />
         <div className='flex flex-col lg:flex-row justify-between items-center gap-8 text-center lg:text-left pt-7 pb-14'>
           <div>
-            <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
+            <div className='font-roboto-serif font-semibold text-xl mb-5'>
               Copyright by
-            </h5>
+            </div>
             <p>
               Designed by{' '}
               <a href='ihttps://www.iconstica.com/'>Iconstica.com</a>
             </p>
           </div>
           <div>
-            <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
+            <div className='font-roboto-serif font-semibold text-xl mb-5'>
               Contact Us
-            </h5>
+            </div>
             <p>
               <a href='tel:+0124574578'>+0 12 457 4578</a>
             </p>
           </div>
           <div>
-            <h5 className='font-roboto-serif font-semibold text-xl mb-5'>
+            <div className='font-roboto-serif font-semibold text-xl mb-5'>
               Address
-            </h5>
+            </div>
             <p>119 Tanglewood Lane Gulfport, MS 39503</p>
           </div>
           <div className='flex items-center gap-7'>

@@ -52,13 +52,17 @@ const Testimonials = () => {
           <button
             onClick={handlePrev}
             className='h-12 w-12 rounded-full bg-black border border-black flex items-center justify-center text-white hover:bg-transparent hover:text-black transition disabled:opacity-50 disabled:hover:bg-black disabled:hover:text-white'
-            disabled={prevDisabled}>
+            disabled={prevDisabled}
+            aria-label='previous testimonial'
+            title='previous testimonial'>
             <ChevronLeft className='size-6' />
           </button>
           <button
             onClick={handleNext}
             className='h-12 w-12 rounded-full bg-black border border-black flex items-center justify-center text-white hover:bg-transparent hover:text-black transition disabled:opacity-50 disabled:hover:bg-black disabled:hover:text-white'
-            disabled={nextDisabled}>
+            disabled={nextDisabled}
+            aria-label='next testimonial'
+            title='next testimonial'>
             <ChevronRight className='size-6' />
           </button>
         </div>

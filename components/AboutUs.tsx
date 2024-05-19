@@ -93,10 +93,10 @@ const AboutUs = () => {
             {getYears(activeIndex).map((year) => (
               <div
                 key={year}
-                className={`text-xl font-semibold ${
+                className={`text-xl ${
                   year === milestones[activeIndex].year
-                    ? 'text-white'
-                    : 'text-neutral-500'
+                    ? 'text-white font-bold scale-125'
+                    : 'text-neutral-300 font-normal'
                 } text-center p-4 mt-8 max-md:first-of-type:hidden max-md:last-of-type:hidden`}>
                 {year}
               </div>
@@ -104,12 +104,16 @@ const AboutUs = () => {
 
             <button
               onClick={handlePrev}
-              className='absolute top-0 -translate-y-1/2 left-0 size-14 bg-black text-white border-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition'>
+              className='absolute top-0 -translate-y-1/2 left-0 size-14 bg-black text-white border-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition'
+              aria-label='previous year'
+              title='previous year'>
               <ChevronLeft className='size-8' />
             </button>
             <button
               onClick={handleNext}
-              className='absolute top-0 -translate-y-1/2 right-0 size-14 bg-black text-white border-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition'>
+              className='absolute top-0 -translate-y-1/2 right-0 size-14 bg-black text-white border-2 rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition'
+              aria-label='next year'
+              title='next year'>
               <ChevronRight className='size-8' />
             </button>
           </div>

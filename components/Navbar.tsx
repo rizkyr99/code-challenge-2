@@ -41,6 +41,7 @@ const Navbar = () => {
         <div className='hidden lg:flex items-center gap-9'>
           {items.map((item) => (
             <Link
+              key={item.label}
               href={item.path}
               className={`text-xl ${
                 pathname === item.path
