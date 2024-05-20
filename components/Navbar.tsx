@@ -91,6 +91,7 @@ const Navbar = () => {
             }`}>
             {items.map((item) => (
               <Link
+                key={item.label}
                 onClick={() => handleClick(item.path)}
                 href={item.path}
                 className={`text-black ${
