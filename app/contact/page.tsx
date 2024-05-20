@@ -81,40 +81,45 @@ const ContactPage = () => {
           className='bg-neutral-100 p-6 sm:p-10 rounded-[20px] space-y-12'>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16'>
             <div className='space-y-4'>
-              <label htmlFor=''>First name</label>
+              <label htmlFor='firstname'>First name</label>
               <input
                 type='text'
+                id='firstname'
                 className='w-full bg-transparent border-b border-neutral-300 outline-none'
               />
             </div>
             <div className='space-y-4'>
-              <label htmlFor=''>Last name</label>
+              <label htmlFor='lastname'>Last name</label>
               <input
                 type='text'
+                id='lastname'
                 className='w-full bg-transparent border-b border-neutral-300 outline-none'
               />
             </div>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16'>
             <div className='space-y-4'>
-              <label htmlFor=''>Email</label>
+              <label htmlFor='email'>Email</label>
               <input
                 type='text'
+                id='email'
                 className='w-full bg-transparent border-b border-neutral-300 outline-none'
               />
             </div>
             <div className='space-y-4'>
-              <label htmlFor=''>Phone</label>
+              <label htmlFor='phone'>Phone</label>
               <input
                 type='text'
+                id='phone'
                 className='w-full bg-transparent border-b border-neutral-300 outline-none'
               />
             </div>
           </div>
           <div className='space-y-4'>
-            <label htmlFor=''>Message</label>
+            <label htmlFor='message'>Message</label>
             <textarea
               rows={4}
+              id='message'
               className='w-full bg-transparent border-b border-neutral-300 outline-none'
             />
           </div>
@@ -129,6 +134,7 @@ const ContactPage = () => {
           loading='lazy'
           allowFullScreen
           referrerPolicy='no-referrer-when-downgrade'
+          title='our location map'
         />
       </section>
     </main>

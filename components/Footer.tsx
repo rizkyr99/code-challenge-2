@@ -78,17 +78,20 @@ const Footer = () => {
           <div className='flex items-center gap-7'>
             <Link
               href='https://www.facebook.com/'
-              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
+              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'
+              aria-label='go to our facebook account'>
               <Facebook className='size-6 text-black stroke-1' />
             </Link>
             <Link
               href='https://www.facebook.com/'
-              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
+              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'
+              aria-label='go to our instagram account'>
               <Instagram className='size-6 text-black stroke-1' />
             </Link>
             <Link
               href='https://www.facebook.com/'
-              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
+              className='bg-white h-12 w-12 rounded-full flex items-center justify-center'
+              aria-label='go to our linkedin account'>
               <Linkedin className='size-6 text-black stroke-1' />
             </Link>
           </div>

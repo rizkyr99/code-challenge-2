@@ -6,7 +6,7 @@ import heroImg from '@/assets/hero.png';
 
 const Hero = () => {
   return (
-    <section className='w-full h-screen bg-[url("/bg-hero.png")] bg-opacity-5 bg-cover -mt-24 pt-36 pb-8 md:pb-16 px-4 lg:px-12 overflow-hidden'>
+    <section className='w-full h-screen bg-[url("/images/bg-hero.webp")] bg-opacity-5 bg-cover -mt-24 pt-36 pb-8 md:pb-16 px-4 lg:px-12 overflow-hidden'>
       <div className='h-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-16'>
         <div className='flex flex-col justify-between'>
           <div className='flex flex-col items-center lg:items-start'>
