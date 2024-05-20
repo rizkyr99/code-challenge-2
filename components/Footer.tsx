@@ -4,6 +4,7 @@ import Button from './Button';
 import logo from '@/assets/logo.svg';
 import facebook from '@/assets/facebook.svg';
 import instagram from '@/assets/instagram.svg';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -78,32 +79,17 @@ const Footer = () => {
             <Link
               href='https://www.facebook.com/'
               className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
-              <Image
-                src={facebook}
-                width={12}
-                height={22}
-                alt='facebook logo'
-              />
+              <Facebook className='size-6 text-black stroke-1' />
             </Link>
             <Link
               href='https://www.facebook.com/'
               className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
-              <Image
-                src={instagram}
-                width={22}
-                height={22}
-                alt='instagram logo'
-              />
+              <Instagram className='size-6 text-black stroke-1' />
             </Link>
             <Link
               href='https://www.facebook.com/'
               className='bg-white h-12 w-12 rounded-full flex items-center justify-center'>
-              <Image
-                src={facebook}
-                width={12}
-                height={22}
-                alt='facebook logo'
-              />
+              <Linkedin className='size-6 text-black stroke-1' />
             </Link>
           </div>
         </div>
