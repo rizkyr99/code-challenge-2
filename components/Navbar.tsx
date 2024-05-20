@@ -11,6 +11,7 @@ const items = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Services', path: '/services' },
+  { label: 'Our Teams', path: '/teams' },
   { label: 'Contact', path: '/contact' },
 ];
 
